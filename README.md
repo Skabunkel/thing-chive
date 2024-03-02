@@ -2,12 +2,11 @@
 
 |name|start|length|padding|format|type|
 |----|-----|------|-------|------|----|
-|id|0|4|no|byte|uint32|
-|created-at|4|8|no|byte|int64|
-|crypto-alg|12|2|no|byte|uint16|
-|sign-alg|14|2|no|byte|uint16|
-|sign|16|43|yes|ascii|hash|
+|created-at|0|11|yes|base64|int64|
+|crypto-suit|11|3|yes|base64|uint16|
+|sign-alg|14|3|yes|base64|uint16|
+|sign|17|43|yes|base64|hash|
 
-59 bytes 
-target is 64 
+60 bytes 
+target is 64
 
